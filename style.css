@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: none;
+}
+
+p {
+    width: fit-content;
+    margin: none;
+}
+
+p.new {
+    font-size: 52px;
+    line-height: 52px;
+    color: red;
+}
+
+p.new.clicked {
+    color: green;
+    animation: goBig 2s forwards;
+}
+
+@keyframes goBig {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: green;
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
